@@ -691,6 +691,7 @@ hi! link EasyMotionShade Comment
 
 hi! link Sneak Search
 hi! link SneakLabel Search
+hi! link SneakLabelMask CocListGreenYellow
 
 " }}}
 " Indent Guides: {{{
