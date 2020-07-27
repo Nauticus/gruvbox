@@ -690,8 +690,8 @@ hi! link EasyMotionShade Comment
 " Sneak: {{{
 
 hi! link Sneak Search
-hi! link SneakLabel Search
-hi! link SneakLabelMask CocListGreenYellow
+call s:HL('SneakLabel', s:bg0, s:yellow, s:bold)
+call s:HL('SneakLabelMask', s:yellow, s:yellow)
 
 " }}}
 " Indent Guides: {{{
