@@ -680,6 +680,81 @@ endif
 
 " }}}
 
+" Treesitter ------------------------------------------------------------------
+" TSNode: {{{
+" hi! link TSError GruvboxRed
+call s:HL('TSPunctDelimiter', s:fg2)
+call s:HL('TSPunctBracket', s:fg3)
+call s:HL('TSPunctSpecial', s:fg3)
+call s:HL('TSConstructor', s:yellow)
+call s:HL('TSTag', s:blue)
+call s:HL('TSTagDelimiter', s:fg3)
+call s:HL('TSProperty', s:aqua)
+call s:HL('TSType', s:yellow)
+call s:HL('TSProperty', s:blue)
+call s:HL('TSOperator', s:fg2)
+call s:HL('TSVariable', s:fg1)
+call s:HL('TSVariableBuiltin', s:purple)
+call s:HL('TSInclude', s:aqua)
+call s:HL('TSParameter', s:vim_fg)
+call s:HL('TSTypeBuiltin', s:yellow)
+call s:HL('TSConditional', s:red)
+call s:HL('TSKeyword', s:red)
+call s:HL('TSMethod', s:aqua)
+call s:HL('TSFunction', s:yellow)
+call s:HL('TSField', s:blue)
+call s:HL('TSParameterReference', s:blue)
+
+call s:HL('TSDefinitionUsage', s:none, s:bg3)
+call s:HL('TSDefinition', s:none, s:none, s:inverse . s:bold)
+" }}}
+
+" TSNone         xxx cleared
+" TSPunctSpecial xxx links to Delimiter
+" TSConstant     xxx links to Constant
+" TSConstBuiltin xxx links to Special
+" TSConstMacro   xxx links to Define
+" TSString       xxx links to String
+" TSStringRegex  xxx links to String
+" TSCharacter    xxx links to Character
+" TSNumber       xxx links to Number
+" TSBoolean      xxx links to Boolean
+" TSFloat        xxx links to Float
+" TSFunction     xxx ctermfg=109 guifg=#83a598
+" TSFuncBuiltin  xxx links to Special
+" TSFuncMacro    xxx cleared
+" TSParameter    xxx links to Identifier
+" TSParameterReference xxx cleared
+" TSMethod       xxx cleared
+" TSField        xxx cleared
+" TSAnnotation   xxx links to PreProc
+" TSAttribute    xxx links to PreProc
+" TSConditional  xxx links to Conditional
+" TSRepeat       xxx links to Repeat
+" TSLabel        xxx cleared
+" TSOperator     xxx links to Operator
+" TSKeyword      xxx links to Keyword
+" TSKeywordFunction xxx links to Keyword
+" TSKeywordOperator xxx links to TSOperator
+" TSException    xxx links to Exception
+" TSTypeBuiltin  xxx links to Type
+" TSStructure    xxx links to Structure
+" TSInclude      xxx links to Include
+" TSVariable     xxx links to TSNone
+" TSVariableBuiltin xxx links to Special
+" TSText         xxx links to TSNone
+" TSStrong       xxx cleared
+" TSEmphasis     xxx cleared
+" TSUnderline    xxx cleared
+" TSTitle        xxx links to Title
+" TSLiteral      xxx links to String
+" TSURI          xxx links to Underlined
+" TSDefinitionUsage xxx links to Visual
+" TSDefinition   xxx links to Search
+" TSCurrentScope xxx links to CursorLine
+" TSPlaygroundFocus xxx links to Visual
+
+
 " Plugin specific -------------------------------------------------------------
 " EasyMotion: {{{
 
